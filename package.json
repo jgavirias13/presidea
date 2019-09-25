@@ -1,0 +1,24 @@
+{
+  "name": "presidea",
+  "version": "1.0.0",
+  "description": "API para el manejo de presupuesto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgavirias13/presidea.git"
+  },
+  "author": "Juan Pablo Gaviria <jgavirias13@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jgavirias13/presidea/issues"
+  },
+  "homepage": "https://github.com/jgavirias13/presidea#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mocha": "^6.2.0",
+    "supertest": "^4.0.2"
+  }
+}
