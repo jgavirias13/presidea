@@ -4,7 +4,7 @@
   "description": "API para el manejo de presupuesto",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha",
+    "test": "./node_modules/.bin/mocha --exit",
     "start": "node index.js",
     "server": "nodemon index.js"
   },
@@ -22,6 +22,7 @@
     "chai": "^4.2.0",
     "express": "^4.17.1",
     "mocha": "^6.2.0",
+    "should": "^13.2.3",
     "supertest": "^4.0.2"
   },
   "devDependencies": {

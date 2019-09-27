@@ -1,7 +1,12 @@
-var assert = require('assert');
+var should = require('should');
+var request = require('supertest');
+var app = require('../index.js');
 
-describe('Basic Mocha String Test', ()=>{
-  it('should return number of characters is 5', () => {
-    assert.equal("Hello".length, 5);
+describe('Basic test', () => {
+  it('Debe responder 200 a peticion /', (done) => {
+    request(app)
+      .get('/')
+      .expect('Content-type', /text/)
+      .expect(200, done);
   });
 });
