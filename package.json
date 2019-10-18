@@ -4,9 +4,10 @@
   "description": "API para el manejo de presupuesto",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --exit",
+    "test": "mocha --timeout 10000 --exit",
     "start": "node index.js",
-    "server": "nodemon index.js"
+    "server": "nodemon index.js",
+    "dev": "cross-env NODE_ENV=development nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -19,13 +20,21 @@
   },
   "homepage": "https://github.com/jgavirias13/presidea#readme",
   "dependencies": {
-    "chai": "^4.2.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
     "express": "^4.17.1",
-    "mocha": "^6.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.3",
+    "rand-token": "^0.4.0",
     "should": "^13.2.3",
     "supertest": "^4.0.2"
   },
   "devDependencies": {
+    "mocha": "^6.2.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "morgan": "^1.9.1",
     "nodemon": "^1.19.2"
   }
 }

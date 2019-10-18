@@ -1,0 +1,1 @@
+Deuda = require('../models/deuda');
