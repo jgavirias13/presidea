@@ -20,7 +20,7 @@
   "homepage": "https://github.com/jgavirias13/presidea#readme",
   "dependencies": {
     "chai": "^4.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mocha": "^6.2.0",
     "should": "^13.2.3",
     "supertest": "^4.0.2"
